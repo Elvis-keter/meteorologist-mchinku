@@ -1,1 +1,138 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 21px;
+  background-image: url('assets/weather.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(58, 167, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 80vh;
+  background-color: rgb(119, 116, 250);
+  border-radius: 20px;
+  box-shadow: 10px rgb(119, 116, 250);
+}
+
+.juu {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.juu img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.chini {
+  position: relative;
+  
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-data {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  color: aliceblue;
+  text-align: center;
+  font-size: 25px;
+}
+
+.temp {
+  color: aliceblue;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.info {
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.infocontainer {
+  flex: 1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 10px;
+  background-color: rgb(108, 114, 173);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.icontainer {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.icont{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icont img {
+  width: 60px;
+  height: 9vh;
+  border-radius: 15px;
+}
+
+.icont span {
+  color: aliceblue;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.iconttwo {
+  width: 50%;
+  display: flex;
+  font-size: medium;
+  font-weight: 500;
+  justify-content: flex-start;
+  align-items: center;
+  color: aliceblue;
+}
+
+
+
+
+
