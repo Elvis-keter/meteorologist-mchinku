@@ -7,22 +7,19 @@ import { WeatherData } from './module/weathermodule';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  title(title: any) {
-    throw new Error('Method not implemented.');
-  }
-  constructor(private weatherService: WeatherService) {
-
-  }
+export class AppComponent implements OnInit {  
+  constructor(private weatherService: WeatherService) {}
 
   weatherData?: WeatherData;
   
   ngOnInit(): void {
     this.weatherService.getWeatherData('Nairobi').subscribe({
       next: (response) => {
-        //this.weatherData = response;
-        
-        console.log(response);
+        this.weatherData = response;
+        if (this.weatherData) {
+          const lowercaseData = this.weatherData.toLowerCase();
+          console.log(lowercaseData);
+        }
       }
     });
   } 
